@@ -1,0 +1,400 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Aclonica', sans-serif;
+}
+
+p, a {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+header {
+    background-color: #10e610;
+    background-size: cover;
+    grid-area: header;
+}
+
+h1 {
+    color: red;
+    font-size: 2.4em;
+}
+
+h3 {
+    color: red;
+}
+
+nav {
+    padding: 1em;
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul li {
+    padding: 0.4em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: red;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    background-color: #10e610;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+}
+
+footer p {
+    color: red;
+    font-size: 1.6em;
+}
+
+.buscador {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: search;
+}
+
+.titulo {
+    display: flex;
+    padding: 2em 2em;
+    grid-area: titulo;
+}
+
+.titulo img {
+    width: 5em;
+}
+
+.titulo-secundario {
+    background-color: #10e610;
+    color: red;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8em;
+    margin: 2em;
+}
+
+.publicidad {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.publicidad img {
+    max-width: 100%;
+    height: auto;
+}
+
+.categorias-productos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorias-productos img {
+    margin: 1em;
+    width: 18em;
+    height: 18em;
+}
+
+.producto {
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: solid 0.5em red;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto img {
+    width: 15em;
+    height: 21em;
+}
+
+.producto p {
+    font-weight: bold;
+    color: red;
+}
+
+.precio {
+    color: #10e610;
+}
+
+.whatsapp {
+    width: 0em;
+    height: 0em;
+}
+
+.whatsapp img {
+    width: 0em;
+    height: 0em;
+}
+
+.redes-sociales {
+    margin: 1em;
+    grid-area: redes;
+}
+
+.redes-sociales img {
+    width: 2.9em;
+    height: 2.9em;
+    padding: 1em;
+}
+
+.medios-de-pago {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    grid-area: medios;
+}
+
+.medios-de-pago img {
+    width: 4.1em;
+    height: 3.6em;
+    padding: 0.5em;
+}
+
+.productos-destacados {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.nav-footer {
+    margin: 1em;
+    grid-area: nav-footer;
+}
+
+.nav-footer ul li {
+    padding: 0.5em;
+}
+
+.copy {
+    margin: 1em;
+    grid-area: copy;
+}
+
+.filtros {
+    color: red;
+    font-size: 1.3em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    grid-area: filtros;
+}
+
+.productos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    grid-area: productos;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.contenedor-informacion {
+    margin: 1em;
+    padding: 1em;
+    border: solid 0.5em red;
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-informacion h3 {
+    padding: 1em;
+}
+
+.video {
+    margin: 1em;
+    padding: 1em;
+    border: solid 0.5em red;
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: video;
+}
+
+.faq {
+    margin: 1em;
+}
+
+.productos-main-wrapper .titulo-secundario, .sobre-nosotros-main-wrapper .titulo-secundario {
+    grid-area: titulo2;
+}
+
+.sobre-nosotros-main-wrapper .contenedor-informacion {
+    grid-area: historia;
+}
+
+.index-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.productos-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;   
+}
+
+.sobre-nosotros-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;   
+}
+
+.encontranos-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;   
+}
+
+.contacto-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;   
+}
+
+.faq-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;   
+}
+
+#video-rick {
+    width: 14em;
+    height: 12em;
+}
+
+#malvinas {
+    width: 14em;
+    height: 12em;    
+}
+
+@media screen and (min-width:768px) {
+
+    header{
+        display: grid;
+        grid-template-areas:
+        "titulo nav"
+        "search search"
+        ;
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas: 
+        "redes nav-footer"
+        "medios medios"
+        "copy copy"
+        ;
+    }
+
+    .whatsapp img {
+        position: fixed;
+        width: 3em;
+        height: 3em;
+        bottom: 3em;
+        right: 3em;
+    }
+
+    .categorias-productos {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #video-rick {
+        width: 28em;
+        height: 22em;
+    }
+    
+    #malvinas {
+        width: 28em;
+        height: 22em;    
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .productos-main-wrapper main {
+        display: grid;
+        grid-template-areas: 
+        "titulo2 titulo2 titulo2"
+        "filtros productos productos"
+        ;
+    }
+
+    .sobre-nosotros-main-wrapper main {
+        display: grid;
+        grid-template-areas: 
+        "titulo2 titulo2"
+        "historia video"
+        ;
+    }
+
+    .filtros {
+        align-items: flex-start;
+    }
+}
