@@ -12,7 +12,8 @@ p, a {
 }
 
 header {
-    background-color: #10e610;
+    background: rgb(65,255,100);
+    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, rgba(13,85,0,1) 100%);
     background-size: cover;
     grid-area: header;
 }
@@ -38,6 +39,8 @@ nav ul {
 
 nav ul li {
     padding: 0.4em;
+    border-bottom: solid 0em red;
+    transition: all 0.2s ease-in-out;
 }
 
 ul {
@@ -55,7 +58,8 @@ main {
 }
 
 footer {
-    background-color: #10e610;
+    background: rgb(65,255,100);
+    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, rgba(13,85,0,1) 100%);
     background-size: cover;
     display: flex;
     flex-flow: column;
@@ -88,8 +92,9 @@ footer p {
 }
 
 .titulo-secundario {
-    background-color: #10e610;
-    color: red;
+    background: rgb(65,255,100);
+    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, rgba(13,85,0,1) 100%);
+    color: #ff0000;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -132,6 +137,7 @@ footer p {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease-in-out;
 }
 
 .producto img {
@@ -156,6 +162,7 @@ footer p {
 .whatsapp img {
     width: 0em;
     height: 0em;
+    transition: all 0.2s ease-in-out;
 }
 
 .redes-sociales {
@@ -167,6 +174,7 @@ footer p {
     width: 2.9em;
     height: 2.9em;
     padding: 1em;
+    transition: all 0.2s ease-in-out;
 }
 
 .medios-de-pago {
@@ -199,6 +207,8 @@ footer p {
 
 .nav-footer ul li {
     padding: 0.5em;
+    border-bottom: solid 0em red;
+    transition: all 0.2s ease-in-out;
 }
 
 .copy {
@@ -331,6 +341,26 @@ footer p {
     height: 12em;    
 }
 
+nav li:hover {
+    border-bottom: solid 0.2em red;
+}
+
+.nav-footer ul li:hover {
+    border-bottom: solid 0.2em red;  
+}
+
+.whatsapp img:hover {
+    filter: brightness(1.75);
+}
+
+.producto:hover {
+    border: solid 0.5em #0d5500;
+}
+
+.redes-sociales img:hover {
+    transform: rotate(360deg);
+}
+
 @media screen and (min-width:768px) {
 
     header{
@@ -397,4 +427,13 @@ footer p {
     .filtros {
         align-items: flex-start;
     }
+
+}
+
+@media screen and (min-width:1200px) {
+    .categorias-productos img {
+        width: 23em;
+        height: 23em;
+    }
+
 }
