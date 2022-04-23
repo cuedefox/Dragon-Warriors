@@ -66,11 +66,11 @@ main {
     background-image: url(img/fondo.png);
     background-position: 0px 0px;
 
-	animation: animatedBackground 40s linear infinite;
-	-moz-animation: animatedBackground 40s linear infinite;
-	-webkit-animation: animatedBackground 40s linear infinite;
-	-ms-animation: animatedBackground 40s linear infinite;
-	-o-animation: animatedBackground 40s linear infinite;
+	animation: animatedBackground 240s linear infinite;
+	-moz-animation: animatedBackground 240s linear infinite;
+	-webkit-animation: animatedBackground 240s linear infinite;
+	-ms-animation: animatedBackground 240s linear infinite;
+	-o-animation: animatedBackground 240s linear infinite;
 }
 
 footer {
@@ -185,6 +185,7 @@ footer p {
 
 .redes-sociales {
     margin: 1em;
+    text-align: center;
     grid-area: redes;
 }
 
@@ -232,11 +233,17 @@ footer p {
 .copy {
     margin: 1em;
     grid-area: copy;
+    text-align: center;
 }
 
 .filtros {
     color: red;
     font-size: 1.3em;
+    background-color: white;
+    border: solid 0.2em red;
+    border-radius: 2em;
+    padding: 1em;
+    margin: 1em;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -290,8 +297,28 @@ footer p {
     margin: 1em;
 }
 
-.productos-main-wrapper .titulo-secundario, .sobre-nosotros-main-wrapper .titulo-secundario {
+.nuestras-ubicaciones {
+    grid-area: nuestras-ubicaciones;
+}
+
+.cede-principal {
+    grid-area: cede-principal;
+}
+
+.clientes {
+    grid-area: clientes;
+}
+
+.mayoristas {
+    grid-area: mayoristas;
+}
+
+.titulo-secundario {
     grid-area: titulo2;
+}
+
+.nada {
+    grid-area: nada;
 }
 
 .sobre-nosotros-main-wrapper .contenedor-informacion {
@@ -384,23 +411,23 @@ nav li:hover {
 
 @keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: -1600px 0; }
 }
 @-moz-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: -1600px 0; }
 }
 @-webkit-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: -1600px 0; }
 }
 @-ms-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: -1600px 0; }
 }
 @-o-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: -1600px 0; }
 }
 
 @media screen and (min-width:768px) {
@@ -463,6 +490,22 @@ nav li:hover {
         grid-template-areas: 
         "titulo2 titulo2"
         "historia video"
+        ;
+    }
+
+    .encontranos-main-wrapper main {
+        display: grid;
+        grid-template-areas:
+        "titulo2 titulo2"
+        "nuestras-ubicaciones cede-principal"
+        ;
+    }
+
+    .contacto-main-wrapper main {
+        display: grid;
+        grid-template-areas: 
+        "titulo2 titulo2"
+        "clientes mayoristas"
         ;
     }
 
