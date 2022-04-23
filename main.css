@@ -97,10 +97,11 @@ footer p {
     grid-area: search;
 }
 
-.titulo {
+.titulo a {
     display: flex;
     padding: 2em 2em;
     grid-area: titulo;
+    text-decoration: none;
 }
 
 .titulo img {
