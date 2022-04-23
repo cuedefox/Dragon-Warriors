@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+body {
+    cursor: url(img/cursor1.png), auto;
+}
+
+a {
+    cursor: url(img/cursor1.png), auto;
+}
+
 h1, h2, h3 {
     font-family: 'Aclonica', sans-serif;
 }
@@ -55,6 +63,14 @@ li a {
 
 main {
     grid-area: main;
+    background-image: url(img/fondo.png);
+    background-position: 0px 0px;
+
+	animation: animatedBackground 40s linear infinite;
+	-moz-animation: animatedBackground 40s linear infinite;
+	-webkit-animation: animatedBackground 40s linear infinite;
+	-ms-animation: animatedBackground 40s linear infinite;
+	-o-animation: animatedBackground 40s linear infinite;
 }
 
 footer {
@@ -129,6 +145,7 @@ footer p {
 }
 
 .producto {
+    background-color: white;
     margin: 1em;
     padding: 0.5em;
     border-radius: 1em;
@@ -239,6 +256,7 @@ footer p {
 }
 
 .contenedor-informacion {
+    background-color: white;
     margin: 1em;
     padding: 1em;
     border: solid 0.5em red;
@@ -254,6 +272,7 @@ footer p {
 }
 
 .video {
+    background-color: white;
     margin: 1em;
     padding: 1em;
     border: solid 0.5em red;
@@ -266,6 +285,7 @@ footer p {
 }
 
 .faq {
+    background-color: white;
     margin: 1em;
 }
 
@@ -361,6 +381,27 @@ nav li:hover {
     transform: rotate(360deg);
 }
 
+@keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-moz-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-webkit-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-ms-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+@-o-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -300px 0; }
+}
+
 @media screen and (min-width:768px) {
 
     header{
@@ -427,7 +468,6 @@ nav li:hover {
     .filtros {
         align-items: flex-start;
     }
-
 }
 
 @media screen and (min-width:1200px) {
@@ -435,5 +475,4 @@ nav li:hover {
         width: 23em;
         height: 23em;
     }
-
 }
