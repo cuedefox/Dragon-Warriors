@@ -97,27 +97,6 @@ footer p {
     grid-area: search;
 }
 
-.buscador input {
-    padding: 0.7em;
-    border: solid 0.3em red;
-    border-radius: 2em;
-}
-
-.buscador button {
-    background-color: #41ff64;
-    border: solid 0.4em red;
-    border-radius: 3em;
-    padding: 0.5em;
-    position: relative;
-    top: 0.5em;
-    cursor: url(img/cursor1.png), auto;
-}
-
-.buscador img {
-    width: 2em;
-    height: 2em;
-}
-
 .titulo a {
     display: flex;
     padding: 2em 2em;
