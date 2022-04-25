@@ -20,8 +20,8 @@ p, a {
 }
 
 header {
-    background: rgb(65,255,100);
-    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, rgba(13,85,0,1) 100%);
+    background: #41ff64;
+    background: linear-gradient(338deg, #41ff64 0%, #0d5500 100%);
     background-size: cover;
     grid-area: header;
 }
@@ -95,6 +95,27 @@ footer p {
     align-items: center;
     justify-content: center;
     grid-area: search;
+}
+
+.buscador input {
+    padding: 0.7em;
+    border: solid 0.3em red;
+    border-radius: 2em;
+}
+
+.buscador button {
+    background-color: #41ff64;
+    border: solid 0.4em red;
+    border-radius: 3em;
+    padding: 0.5em;
+    position: relative;
+    top: 0.5em;
+    cursor: url(img/cursor1.png), auto;
+}
+
+.buscador img {
+    width: 2em;
+    height: 2em;
 }
 
 .titulo a {
