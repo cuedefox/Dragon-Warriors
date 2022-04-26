@@ -3,27 +3,12 @@
     margin: 0;
 }
 
-body {
-    cursor: url(img/cursor1.png), auto;
-}
-
-a {
-    cursor: url(img/cursor1.png), auto;
-}
-
 h1, h2, h3 {
     font-family: 'Aclonica', sans-serif;
 }
 
 p, a {
     font-family: 'Red Hat Display', sans-serif;
-}
-
-header {
-    background: #41ff64;
-    background: linear-gradient(338deg, #41ff64 0%, #0d5500 100%);
-    background-size: cover;
-    grid-area: header;
 }
 
 h1 {
@@ -33,22 +18,6 @@ h1 {
 
 h3 {
     color: red;
-}
-
-nav {
-    padding: 1em;
-    grid-area: nav;
-}
-
-nav ul {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-nav ul li {
-    padding: 0.4em;
-    border-bottom: solid 0em red;
-    transition: all 0.2s ease-in-out;
 }
 
 ul {
@@ -75,7 +44,7 @@ main {
 
 footer {
     background: rgb(65,255,100);
-    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, rgba(13,85,0,1) 100%);
+    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, #0d5500 100%);
     background-size: cover;
     display: flex;
     flex-flow: column;
@@ -89,49 +58,9 @@ footer p {
     font-size: 1.6em;
 }
 
-.buscador {
-    margin: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: search;
-}
-
-.buscador input {
-    padding: 0.7em;
-    border: solid 0.3em red;
-    border-radius: 2em;
-}
-
-.buscador button {
-    background-color: #41ff64;
-    border: solid 0.4em red;
-    border-radius: 3em;
-    padding: 0.5em;
-    position: relative;
-    top: 0.5em;
-    cursor: url(img/cursor1.png), auto;
-}
-
-.buscador img {
-    width: 2em;
-    height: 2em;
-}
-
-.titulo a {
-    display: flex;
-    padding: 2em 2em;
-    grid-area: titulo;
-    text-decoration: none;
-}
-
-.titulo img {
-    width: 5em;
-}
-
 .titulo-secundario {
     background: rgb(65,255,100);
-    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, rgba(13,85,0,1) 100%);
+    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, #0d5500 100%);
     color: #ff0000;
     display: flex;
     flex-flow: column;
@@ -398,10 +327,6 @@ footer p {
     height: 12em;    
 }
 
-nav li:hover {
-    border-bottom: solid 0.2em red;
-}
-
 .nav-footer ul li:hover {
     border-bottom: solid 0.2em red;  
 }
@@ -440,14 +365,6 @@ nav li:hover {
 }
 
 @media screen and (min-width:768px) {
-
-    header{
-        display: grid;
-        grid-template-areas:
-        "titulo nav"
-        "search search"
-        ;
-    }
 
     footer {
         display: grid;
