@@ -141,18 +141,6 @@ footer p {
     margin: 2em;
 }
 
-.publicidad {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.publicidad img {
-    max-width: 100%;
-    height: auto;
-}
-
 .categorias-productos {
     display: flex;
     flex-flow: column;
@@ -210,9 +198,9 @@ footer p {
     grid-area: redes;
 }
 
-.redes-sociales img {
-    width: 2.9em;
-    height: 2.9em;
+.redes-sociales-img {
+    width: 4.9em;
+    height: 4.9em;
     padding: 1em;
     transition: all 0.2s ease-in-out;
 }
@@ -227,8 +215,8 @@ footer p {
 }
 
 .medios-de-pago img {
-    width: 4.1em;
-    height: 3.6em;
+    width: 6.1em;
+    height: 4.6em;
     padding: 0.5em;
 }
 
