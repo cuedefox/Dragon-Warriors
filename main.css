@@ -140,10 +140,6 @@ footer p {
 }
 
 .medios-de-pago {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
     margin: 1em;
     grid-area: medios;
 }
