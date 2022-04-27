@@ -19,55 +19,63 @@
 <body>
     <div class="index-main-wrapper">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0d5500;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #41ff64;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                        Dragon Warriors
-                      </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Productos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="pages/productos.html">Todos</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="pages/productos.html">Juegos</a></li>
-                          <li><a class="dropdown-item" href="pages/productos.html">Dados</a></li>
-                          <li><a class="dropdown-item" href="pages/productos.html">Miniaturas</a></li>
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="img/logo.png" alt="logo de dragon warriors" width="30" height="24"
+                            class="d-inline-block align-text-top img-logo">
+                        <h1 class="mt-2">Dragon Warriors</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="pages/productos.html">Todos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="pages/productos.html">Juegos</a></li>
+                                    <li><a class="dropdown-item" href="pages/productos.html">Dados</a></li>
+                                    <li><a class="dropdown-item" href="pages/productos.html">Miniaturas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mas info
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" href="pages/encontranos.html">Encontranos</a></li>
+                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/preguntas-frecuentes.html">Faq</a>
+                            </li>
                         </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Mas info
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                          <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
-                          <li><a class="dropdown-item" href="pages/encontranos.html">Encontranos</a></li>
-                        </ul>
-                      <li class="nav-item">
-                        <a class="nav-link" href="pages/preguntas-frecuentes.html">Faq</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                  </div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
-              </nav>
+            </nav>
         </header>
         <main>
-            <section class="publicidad">
+            <section class="publicidad my-5">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -75,8 +83,7 @@
                                 alt="imagen de publicidad juego + dados">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/publicidad2.png" class="d-block w-100"
-                                alt="imagen de publicidad ironsworn">
+                            <img src="img/publicidad2.png" class="d-block w-100" alt="imagen de publicidad ironsworn">
                         </div>
                         <div class="carousel-item">
                             <img src="img/publicidad3.png" class="d-block w-100"
@@ -95,7 +102,7 @@
                     </button>
                 </div>
             </section>
-            <section class="categorias-productos">
+            <section class="categorias-productos d-flex">
                 <a href="pages/productos.html">
                     <img src="img/categoria-juegos.png" alt="imagen de categoria de juegos de rol">
                 </a>
@@ -109,7 +116,7 @@
             <div class="titulo-secundario">
                 <h2>Productos Destacados</h2>
             </div>
-            <section class="productos-destacados">
+            <section class="productos-destacados d-flex flex-wrap align-items-center justify-content-center">
                 <div class="producto">
                     <img src="img/producto-dados-galaxia.jpg" alt="dados con aspecto de galaxia">
                     <p>Dados galaxia<br><span class="precio">1500$</span></p>
@@ -149,12 +156,12 @@
                 </a>
             </div>
         </main>
-        <footer>
+        <footer class="container">
             <div class="redes-sociales">
                 <p>Redes Sociales</p>
-                <a href="#"><img src="img/facebook-icon.png" alt="facebook" class="redes-sociales-img"></a>
-                <a href="#"><img src="img/instagram-icon.png" alt="instagram" class="redes-sociales-img"></a>
-                <a href="#"><img src="img/youtube-icon.png" alt="youtube" class="redes-sociales-img"></a>
+                <a href="#"><img src="img/facebook-icon.png" alt="facebook"></a>
+                <a href="#"><img src="img/instagram-icon.png" alt="instagram"></a>
+                <a href="#"><img src="img/youtube-icon.png" alt="youtube"></a>
             </div>
             <div class="nav-footer">
                 <ul>
@@ -180,7 +187,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
 
