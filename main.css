@@ -72,7 +72,6 @@ footer p {
     align-items: center;
     justify-content: center;
     padding: 0.8em;
-    margin: 2em;
 }
 
 .categorias-productos {
@@ -150,10 +149,6 @@ footer p {
     padding: 0.5em;
 }
 
-.productos-destacados {
-    margin: 2em;
-}
-
 .nav-footer {
     margin: 1em;
     grid-area: nav-footer;
@@ -178,11 +173,6 @@ footer p {
     border: solid 0.2em red;
     border-radius: 2em;
     padding: 1em;
-    margin: 1em;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
     grid-area: filtros;
 }
 
@@ -325,7 +315,7 @@ footer p {
 }
 
 .nav-footer ul li:hover {
-    border-bottom: solid 0.2em red;  
+    border-bottom: solid 0.2em red;
 }
 
 .whatsapp img:hover {
@@ -386,35 +376,9 @@ footer p {
         align-items: center;
         justify-content: center;
     }
-
-    #video-rick {
-        width: 28em;
-        height: 22em;
-    }
-    
-    #malvinas {
-        width: 28em;
-        height: 22em;    
-    }
 }
 
 @media screen and (min-width:1024px) {
-
-    .productos-main-wrapper main {
-        display: grid;
-        grid-template-areas: 
-        "titulo2 titulo2 titulo2"
-        "filtros productos productos"
-        ;
-    }
-
-    .sobre-nosotros-main-wrapper main {
-        display: grid;
-        grid-template-areas: 
-        "titulo2 titulo2"
-        "historia video"
-        ;
-    }
 
     .encontranos-main-wrapper main {
         display: grid;
@@ -431,15 +395,25 @@ footer p {
         "clientes mayoristas"
         ;
     }
-
-    .filtros {
-        align-items: flex-start;
-    }
 }
 
 @media screen and (min-width:1200px) {
+
     .categorias-productos img {
         width: 23em;
         height: 23em;
     }
+
+    
+    #video-rick {
+        width: 28em;
+        height: 22em;
+    }
+
+        
+    #malvinas {
+        width: 28em;
+        height: 22em;    
+    }
+
 }
