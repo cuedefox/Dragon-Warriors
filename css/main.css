@@ -315,6 +315,11 @@ footer p {
     height: 12em;    
 }
 
+
+a:hover {
+    color: red;
+}
+
 .nav-footer ul li:hover {
     border-bottom: solid 0.2em red;
 }
@@ -375,30 +380,15 @@ footer p {
         right: 3em;
     }
 
+    .contenedor-informacion p {
+        align-self: flex-start;
+    }
+
     .categorias-productos {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-    }
-}
-
-@media screen and (min-width:1024px) {
-
-    .encontranos-main-wrapper main {
-        display: grid;
-        grid-template-areas:
-        "titulo2 titulo2"
-        "nuestras-ubicaciones cede-principal"
-        ;
-    }
-
-    .contacto-main-wrapper main {
-        display: grid;
-        grid-template-areas: 
-        "titulo2 titulo2"
-        "clientes mayoristas"
-        ;
     }
 }
 

@@ -94,13 +94,16 @@
                             datos
                             de contacto aqui debajo y vamos a estar comunicandonos con vos</p>
                         <form>
-                            <p>deja tu email y nos estaremos contactando</p>
-                            <input type="email" placeholder="ejemplo@dominio.com">
-                            <p>breve descripcion de su local</p>
-                            <textarea name="descripcion-mayorista" id="descripcion-mayorista" cols="30"
-                                rows="10"></textarea>
-                            <input type="submit" value="Enviar formulario">
-                            <input type="reset" value="Limpiar">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@dominio.com">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Informacion de la empresa</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <input type="submit" class="btn btn-outline-success" value="Enviar">
+                              <input type="reset" class="btn btn-outline-success" value="Limpiar">
                         </form>
                     </section>
                 </div>
