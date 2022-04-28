@@ -32,7 +32,7 @@ li a {
 
 main {
     grid-area: main;
-    background-image: url(img/fondo.png);
+    background-image: url(../img/fondo.png);
     background-position: 0px 0px;
 
 	animation: animatedBackground 240s linear infinite;
@@ -85,6 +85,7 @@ footer p {
     margin: 1em;
     width: 18em;
     height: 18em;
+    transition: all 0.5s ease-in-out;
 }
 
 .producto {
@@ -328,6 +329,10 @@ footer p {
 
 .redes-sociales img:hover {
     transform: rotate(360deg);
+}
+
+.categorias-productos img:hover {
+    filter: opacity(85%);
 }
 
 @keyframes animatedBackground {
