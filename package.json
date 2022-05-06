@@ -1,0 +1,25 @@
+{
+  "name": "dragon-warriors",
+  "version": "1.0.0",
+  "description": "Esta pagina es parte del proceso de aprendizaje de coderhouse, la mayoria de las cosas aprendidas en clase seran implementadas en este proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/import.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuedefox/Dragon-Warriors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuedefox/Dragon-Warriors/issues"
+  },
+  "homepage": "https://github.com/cuedefox/Dragon-Warriors#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

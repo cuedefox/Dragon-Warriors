@@ -1,0 +1,57 @@
+@media screen and (min-width:768px) {
+
+    footer {
+        display: grid;
+        grid-template-areas: 
+        "redes nav-footer"
+        "medios medios"
+        "copy copy"
+        ;
+    }
+
+    .whatsapp {
+        img {
+        position: fixed;
+        width: 3em;
+        height: 3em;
+        bottom: 3em;
+        right: 3em;
+        }
+    }
+
+    .contenedor-informacion {
+        p {
+        align-self: flex-start;
+        }
+    }
+
+    .categorias-productos {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .categorias-productos {
+        img {
+        width: 23em;
+        height: 23em;
+        }
+    }
+
+    
+    #video-rick {
+        width: 28em;
+        height: 22em;
+    }
+
+        
+    #malvinas {
+        width: 28em;
+        height: 22em;    
+    }
+
+}

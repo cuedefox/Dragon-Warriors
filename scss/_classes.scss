@@ -1,0 +1,214 @@
+.img-logo {
+    width: 2em;
+    height: 2em;
+}
+
+.titulo-secundario {
+    background: rgb(65,255,100);
+    background: linear-gradient(338deg, rgba(65,255,100,1) 0%, $color-pri1 100%);
+    color: $color-sec;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8em;
+}
+
+.categorias-productos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        margin: 1em;
+        width: 18em;
+        height: 18em;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            filter: opacity(85%);
+        }
+    }
+}
+
+.producto {
+    background-color: $color-container;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: solid 0.5em $color-sec;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+    img {
+        width: 15em;
+        height: 21em;
+    }
+
+    p {
+        font-weight: bold;
+        color: $color-sec;
+    }
+
+    &:hover {
+        border: solid 0.5em $color-pri1;
+    }
+}
+
+.precio {
+    color: #10e610;
+}
+
+.whatsapp {
+    width: 0em;
+    height: 0em;
+
+    img {
+        width: 0em;
+        height: 0em;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            filter: brightness(1.75);
+        }
+    }
+}
+
+.redes-sociales {
+    margin: 1em;
+    text-align: center;
+    grid-area: redes;
+
+    img {
+        width: 4.9em;
+        height: 4.9em;
+        padding: 1em;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.medios-de-pago {
+    margin: 1em;
+    grid-area: medios;
+
+    img {
+        width: 6.1em;
+        height: 4.6em;
+        padding: 0.5em;
+    }
+}
+
+.nav-footer {
+    margin: 1em;
+    grid-area: nav-footer;
+
+    ul {
+        li {
+            padding: 0.5em;
+            border-bottom: solid 0em $color-sec;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                border-bottom: solid 0.2em $color-sec;
+            }
+        }
+    }
+}
+
+.copy {
+    margin: 1em;
+    grid-area: copy;
+    text-align: center;
+}
+
+.filtros {
+    color: $color-sec;
+    font-size: 1.3em;
+    background-color: $color-container;
+    border: solid 0.2em $color-sec;
+    border-radius: 2em;
+    padding: 1em;
+    grid-area: filtros;
+}
+
+.productos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    grid-area: productos;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.contenedor-informacion {
+    background-color: $color-container;
+    margin: 1em;
+    padding: 1em;
+    border: solid 0.5em $color-sec;
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        padding: 1em;
+    }
+}
+
+.video {
+    background-color: $color-container;
+    margin: 1em;
+    padding: 1em;
+    border: solid 0.5em $color-sec;
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: video;
+}
+
+.faq {
+    background-color: $color-container;
+    margin: 1em;
+}
+
+.nuestras-ubicaciones {
+    grid-area: nuestras-ubicaciones;
+}
+
+.cede-principal {
+    grid-area: cede-principal;
+}
+
+.clientes {
+    grid-area: clientes;
+}
+
+.mayoristas {
+    grid-area: mayoristas;
+}
+
+.titulo-secundario {
+    grid-area: titulo2;
+}
+
+.nada {
+    grid-area: nada;
+}
+
+.sobre-nosotros-main-wrapper .contenedor-informacion {
+    grid-area: historia;
+}

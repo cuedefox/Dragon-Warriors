@@ -1,0 +1,62 @@
+h1, h2, h3 {
+    font-family: 'Aclonica', sans-serif;
+}
+
+p, a {
+    font-family: '$Red Hat Display', sans-serif;
+}
+
+h1 {
+    color: $color-sec;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: $color-sec;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: $color-sec;
+    }
+}
+
+main {
+    grid-area: main;
+    background-image: url(../img/fondo.png);
+    background-position: 0px 0px;
+
+	animation: animatedBackground 240s linear infinite;
+	-moz-animation: animatedBackground 240s linear infinite;
+	-webkit-animation: animatedBackground 240s linear infinite;
+	-ms-animation: animatedBackground 240s linear infinite;
+	-o-animation: animatedBackground 240s linear infinite;
+}
+
+footer {
+    background: rgb(65,255,100);
+    background: linear-gradient(338deg, #41ff64 0%, $color-pri1 100%);
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+
+    p {
+        color: $color-sec;
+        font-size: 1.6em;
+    }
+}
+
+a {
+    &:hover {
+        color: $color-sec;
+    }
+}
