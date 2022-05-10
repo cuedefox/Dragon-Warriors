@@ -6,7 +6,30 @@
 $color-pri1: #0d5500;
 $color-sec: red;
 $color-container: white;
-$gird-mobile:
-"header"
-"main"
-"footer";
+$mainw: (
+    index: 
+    "header"
+    "main"
+    "footer",
+    productos: 
+    "header"
+    "main"
+    "footer",
+    sobre-nosotros: 
+    "header"
+    "main"
+    "footer",
+    encontranos: 
+    "header"
+    "main"
+    "footer",
+    contacto: 
+    "header"
+    "main"
+    "footer",
+    faq: 
+    "header"
+    "main"
+    "footer",
+)
+

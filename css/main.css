@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0; }
 
-h1, h2, h3 {
+h2, h1, h3 {
   font-family: 'Aclonica', sans-serif; }
 
 p, a {
@@ -42,7 +42,7 @@ footer {
   align-items: center;
   justify-content: center;
   grid-area: footer; }
-  footer p {
+  footer p, footer a {
     color: red;
     font-size: 1.6em; }
 
@@ -90,7 +90,7 @@ a:hover {
   .producto img {
     width: 15em;
     height: 21em; }
-  .producto p {
+  .producto p, .producto a {
     font-weight: bold;
     color: red; }
   .producto:hover {
@@ -285,7 +285,7 @@ a:hover {
     height: 3em;
     bottom: 3em;
     right: 3em; }
-  .contenedor-informacion p {
+  .contenedor-informacion p, .contenedor-informacion a {
     align-self: flex-start; }
   .categorias-productos {
     display: flex;

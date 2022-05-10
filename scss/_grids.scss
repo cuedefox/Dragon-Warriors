@@ -1,29 +1,6 @@
-.index-main-wrapper {
-    display: grid;
-    grid-template-areas: $gird-mobile;
-}
-
-.productos-main-wrapper {
-    display: grid;
-    grid-template-areas: $gird-mobile;   
-}
-
-.sobre-nosotros-main-wrapper {
-    display: grid;
-    grid-template-areas: $gird-mobile;   
-}
-
-.encontranos-main-wrapper {
-    display: grid;
-    grid-template-areas: $gird-mobile;   
-}
-
-.contacto-main-wrapper {
-    display: grid;
-    grid-template-areas: $gird-mobile;   
-}
-
-.faq-main-wrapper {
-    display: grid;
-    grid-template-areas: $gird-mobile;   
+@each $pagew, $areaw in $mainw {
+    .#{$pagew}-main-wrapper {
+        display: grid;
+        grid-template-areas: $areaw;
+    }
 }

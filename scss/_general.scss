@@ -1,17 +1,19 @@
-h1, h2, h3 {
+h2 {
     font-family: 'Aclonica', sans-serif;
 }
 
-p, a {
+p {
     font-family: '$Red Hat Display', sans-serif;
 }
 
 h1 {
+    @extend h2;
     color: $color-sec;
     font-size: 1.5em;
 }
 
 h3 {
+    @extend h2;
     color: $color-sec;
 }
 
@@ -56,6 +58,8 @@ footer {
 }
 
 a {
+    @extend p;
+
     &:hover {
         color: $color-sec;
     }
