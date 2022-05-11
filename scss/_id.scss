@@ -1,9 +1,7 @@
 #video-rick {
-    width: 14em;
-    height: 12em;
+    @include size(14em, 12em);
 }
 
 #malvinas {
-    width: 14em;
-    height: 12em;    
+    @extend #video-rick;
 }

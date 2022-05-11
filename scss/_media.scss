@@ -12,8 +12,7 @@
     .whatsapp {
         img {
         position: fixed;
-        width: 3em;
-        height: 3em;
+        @include size(3em, 3em);
         bottom: 3em;
         right: 3em;
         }
@@ -37,21 +36,18 @@
 
     .categorias-productos {
         img {
-        width: 23em;
-        height: 23em;
+            @include size(23em, 23em);
         }
     }
 
     
     #video-rick {
-        width: 28em;
-        height: 22em;
+        @include size(28em, 22em);
     }
 
         
     #malvinas {
-        width: 28em;
-        height: 22em;    
+        @include size(28em, 22em);    
     }
 
 }

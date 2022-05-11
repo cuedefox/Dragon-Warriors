@@ -237,11 +237,7 @@ a:hover {
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
-#video-rick {
-  width: 14em;
-  height: 12em; }
-
-#malvinas {
+#video-rick, #malvinas {
   width: 14em;
   height: 12em; }
 
@@ -297,7 +293,7 @@ a:hover {
   .categorias-productos img {
     width: 23em;
     height: 23em; }
-  #video-rick {
+  #video-rick, #malvinas {
     width: 28em;
     height: 22em; }
   #malvinas {

@@ -1,6 +1,5 @@
 .img-logo {
-    width: 2em;
-    height: 2em;
+    @include size(2em, 2em);
 }
 
 .titulo-secundario {
@@ -22,8 +21,7 @@
 
     img{
         margin: 1em;
-        width: 18em;
-        height: 18em;
+        @include size(18em, 18em);
         transition: all 0.5s ease-in-out;
 
         &:hover {
@@ -45,8 +43,7 @@
     transition: all 0.2s ease-in-out;
 
     img {
-        width: 15em;
-        height: 21em;
+        @include size(15em, 21em);
     }
 
     p {
@@ -64,12 +61,10 @@
 }
 
 .whatsapp {
-    width: 0em;
-    height: 0em;
+    @include size(0em, 0em);
 
     img {
-        width: 0em;
-        height: 0em;
+        @include size(0em, 0em);
         transition: all 0.2s ease-in-out;
 
         &:hover {
@@ -84,8 +79,7 @@
     grid-area: redes;
 
     img {
-        width: 4.9em;
-        height: 4.9em;
+        @include size(4.9em, 4.9em);
         padding: 1em;
         transition: all 0.2s ease-in-out;
 
@@ -100,8 +94,7 @@
     grid-area: medios;
 
     img {
-        width: 6.1em;
-        height: 4.6em;
+        @include size(6.1em, 4.6em);
         padding: 0.5em;
     }
 }
@@ -209,6 +202,9 @@
     grid-area: nada;
 }
 
-.sobre-nosotros-main-wrapper .contenedor-informacion {
+.sobre-nosotros-main-wrapper {
+    .contenedor-informacion {
     grid-area: historia;
+    }
 }
+
