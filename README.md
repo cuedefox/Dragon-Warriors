@@ -14,3 +14,6 @@ scss/_id.scss: implemento mixin y extend en los id.
 scss/_media.scss: implemento mixin en los media queries.
 
 .html (todos): agrego keywords, descripcion y actualizo el titulo en todos los html.
+
+#Resultado:
+Aprobado con la nota maxima.
